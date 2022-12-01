@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="loginpage.css">
+    <title>login page</title>
+</head>
+
+<body>
+    <center>
+        <h1> Admin Login Form </h1>
+    </center>
+    <form>
+        <div class="container">
+            <label>Username : </label>
+            <br>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <br>
+            <label>Password : </label>
+            <br>
+            <input type="password" placeholder="Enter Password" name="password" pattern="(?=.*\d)(?=.*[\W_]).{7,}"
+                title="Enter minimum 7 characters , have atleast one special character, one number " required>
+            <br>
+            <button type="submit">Login</button>
+            <br>
+            <input type="checkbox" checked="checked"> Remember me
+            <br>
+            <a href="#"> Forgot password? </a>
+        </div>
+    </form>
+</body>
+
+</html>
